@@ -1,0 +1,13 @@
+PYTHONPATH=$PYTHONPATH:/home/iap205/anaconda3/envs/pytorch/lib/python3.7/site-packages/tensorflow/models/research:/home/iap205/anaconda3/envs/pytorch/lib/python3.7/site-packages/tensorflow/models/research/slim
+
+
+--config_path delf_config_example.pbtxt \
+--list_images_path /media/iap205/Data4T/Datasets/google-landmarks-dataset-v2/train.csv \
+--output_dir /media/iap205/Data4T/Export_temp/GLD-v2_DELF_features
+
+--image_1_path /media/iap205/Data4T/Export_temp/landmarks_view/202510/2c362cf42c944b61.jpg \
+--image_2_path /media/iap205/Data4T/Export_temp/landmarks_view/202510/81144f8d571fb7e7.jpg \
+--features_1_path data/features/2c362cf42c944b61.delf \
+--features_2_path data/features/81144f8d571fb7e7.delf \
+--output_image matched/matched_images11.png
+
