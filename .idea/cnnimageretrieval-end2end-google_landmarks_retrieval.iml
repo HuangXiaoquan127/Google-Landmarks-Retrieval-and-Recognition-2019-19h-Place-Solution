@@ -5,6 +5,9 @@
     <orderEntry type="jdk" jdkName="Remote Python 3.7.3 (sftp://iap205@192.168.100.65:22/home/iap205/anaconda3/envs/pytorch/bin/python3.7)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="pytest" />
     <option name="PROJECT_TEST_RUNNER" value="pytest" />

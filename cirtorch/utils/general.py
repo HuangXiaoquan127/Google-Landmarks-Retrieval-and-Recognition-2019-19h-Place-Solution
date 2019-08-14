@@ -10,8 +10,8 @@ def get_data_root():
     # return os.path.join(get_root(), 'data')
 
     # return '/home/iap205/Datasets/retrieval-SfM'
-    # return '/home/iap205/Datasets/google-landmarks-dataset-resize'
-    return '/media/iap205/Data960G/Datasets/GLD-v2'
+    return '/home/iap205/Datasets/google-landmarks-dataset-resize'
+    # return '/media/iap205/Data960G/Datasets/GLD-v2'
     # return '/media/iap205/Data4T/Datasets/google-landmarks-dataset'
     # return '/media/iap205/Data4T/Datasets/google-landmarks-dataset-v2'
 
