@@ -66,3 +66,23 @@ python3 -m cirtorch.examples.train YOUR_EXPORT_DIR --gpu-id 0 --training-dataset
 | ResNet101-GLDv1-ML2-FC(prePCA)-QE | 0.32991 | - | 0.18182 | 0.21052 |
 
 ### 比赛后对GLDv2进行清理和测试
+* 使用 delf_extract_features.py 对 GLDv2 进行深度局部特征的提取；
+* 使用 trainset_clear.py 对 GLDv2 训练集进行 RANSAC 及仿射变换计算内点数，并设定阈值筛选出 query 和 positive 匹配对，
+最终清理结果对比如下(其中 GLD-v2-cleaned-m2 使用 train_m2_pkl.py 生成 pickle 文件)：
+
+| Dataset | Num | Landmarks | qp_pairs |
+|:------|:--------:|:---------:|:----------:|
+| GLD-v2| 1599949/4132914 | 183308/203093 | 1416641 |
+| GLD-v2-cleaned | 1769770 | 151535 | 5148819 |
+| GLD-v2-cleaned-2 | 1031077 | 89356 | 3969519 |
+| GLD-v1-resize | 328601/1225029 | 14655/14950 | 313946 |
+| SfM-120k | 91642 | 551 | 181697 |
+
+* 使用 train_cleaned.py 进行不同数据集的训练，并记录各 epochs 评估信息；
+* 使用 train_cleaned_plot.py 对log信息进行绘图查看：  
+![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/Google%20landmarks%20dataset%20v2%20val_test%20set.png)  
+![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/ROxford%20Medium.png)  
+![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/RParis%20Medium.png)  
+
+
+
