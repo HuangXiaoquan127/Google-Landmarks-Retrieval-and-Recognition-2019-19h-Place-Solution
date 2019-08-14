@@ -85,4 +85,3 @@ python3 -m cirtorch.examples.train YOUR_EXPORT_DIR --gpu-id 0 --training-dataset
 ![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/RParis%20Medium.png)  
 
 
-
