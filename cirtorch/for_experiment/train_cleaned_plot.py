@@ -49,7 +49,8 @@ for i in range(len(titles)):
     ax.grid(axis='y', b=True, which='both', fillstyle='none')
     ax.spines['top'].set_visible(False)
     ax.spines['right'].set_visible(False)
-    plt.savefig(f'/home/iap205/Pictures/{datetime.datetime.now()}.eps', format='eps')
+    # plt.savefig(f'/home/iap205/Pictures/{datetime.datetime.now()}.eps', format='eps')
+    plt.savefig(f'/home/iap205/Pictures/{datetime.datetime.now()}.png', format='png')
     plt.show()
 
 

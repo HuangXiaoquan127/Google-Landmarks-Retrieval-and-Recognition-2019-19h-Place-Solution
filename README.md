@@ -80,8 +80,6 @@ python3 -m cirtorch.examples.train YOUR_EXPORT_DIR --gpu-id 0 --training-dataset
 
 * 使用 train_cleaned.py 进行不同数据集的训练，并记录各 epochs 评估信息；
 * 使用 train_cleaned_plot.py 对log信息进行绘图查看：  
-![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/Google%20landmarks%20dataset%20v2%20val_test%20set.png)  
-![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/ROxford%20Medium.png)  
-![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/RParis%20Medium.png)  
+![](https://github.com/HuangXiaoquan127/Google-Landmarks-Retrieval-and-Recognition-2019-19h-Place-Solution/blob/master/YOUR_EXPORT_DIR/Google%20landmarks%20dataset%20v2%20val_test%20set.png)   
 
 
